@@ -1,6 +1,16 @@
 include <speaker_walls.scad>;
-$fn = 640;
 
+difference(){
+bottom();
+holes();
+}
+
+module holes() {
+    translate([90/2, 0, 25/2-1.5])
+    cube([20, 40, 25], center=true);
+    translate([90/2-20/2, 0, 0])
+    cylinder(d=5, h=30, center=true);
+}
 
 
 module bottom() {

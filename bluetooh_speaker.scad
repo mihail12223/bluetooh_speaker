@@ -1,6 +1,7 @@
 include <speaker_walls.scad>
 include <speaker_bottom.scad>
 include <banan.scad>
+$fn = 64;
 
 translate([90/2 + 20/2, 0, 0])
 banana();
