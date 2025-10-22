@@ -1,8 +1,12 @@
 include <speaker_walls.scad>;
 
+// bottom_kit();
+
+module bottom_kit() {
 difference(){
 bottom();
 holes();
+}
 }
 
 module holes() {
