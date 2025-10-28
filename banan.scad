@@ -5,14 +5,14 @@ $fn = 64;
 diam_hole = 5.4 + 0.5;
 
 
-banan();
+//banan();
 //difference() {
 //    banan();
 //    translate([0, -40/2, 0])
 //    cube([20+1, 40+1, 25+1], center = true);
 //}
-//support();
-//
+support();
+
 module support() {
     difference() {
     translate([-2, 0, -2])
@@ -22,6 +22,9 @@ module support() {
    
     translate ([-85/2-5, 0, -15])
     cylinder(d = 90+1, h = 10, center = true);
+        
+    translate([-47, 0, 15-0.1])
+     cylinder (d1=90, d2=0, h=50, center = true);
   }       
 }
 
@@ -46,9 +49,15 @@ module banan() {
         base();
         holes_banan();
     }
-
-support();
-    }
+}
+    
+//difference() {    
+//color ("red")
+//support();
+//translate([-47, 0, 15-0.1])
+//cylinder (d1=90, d2=0, h=50, center = true);
+//}
+//    }
 
 module base() {
     cube([20, 40, 25], center = true);
@@ -66,7 +75,7 @@ module holes_banan() {
     cube([20,40-6,25], center = true);
     
     translate ([-85/2-4, 0, 0])
-    cylinder(d = 80 + thickness/2, h = 150, center=true);
+    cylinder(d = 80 + 5/2, h = 150, center=true);
     
     translate ([-85/2-5, 0, -15])
     cylinder(d = 90, h = 10, center = true);
