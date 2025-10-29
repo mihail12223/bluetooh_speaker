@@ -3,12 +3,12 @@
 ;Filament used: 2.91554m
 ;Layer height: 0.35
 ;Generated with Cura_SteamEngine 3.2.1
+G1 Z5 F200
 M104 S210
 M109 S210
 M82 ;absolute extrusion mode
 G21 ; set units to millimeters
 G28 Z0
-G1 Z5 F200
 ;LAYER_COUNT:72
 ;LAYER:0
 M107
