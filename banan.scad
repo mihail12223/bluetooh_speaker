@@ -90,6 +90,8 @@ module banan() {
         base();
         holes_banan();
     }
+    color("red")
+    support();
 }
     
 //difference() {    
@@ -98,7 +100,7 @@ module banan() {
 //translate([-47, 0, 15-0.1])
 //cylinder (d1=90, d2=0, h=50, center = true);
 //}
-//    }
+//    
 
 module base() {
     cube([20, 40, 25], center = true);
