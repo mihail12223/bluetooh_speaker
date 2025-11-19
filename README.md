@@ -12,3 +12,7 @@
 
 ### Комплект демонстрации фигур Хладни компании	PHYWE
 [Комплект для эксперимента](https://www.phywe.com/ru/eksperimenty-i-nabory/demonstratzionnye-nabory-dlya-uchiteley/) на официальном сайте.
+
+Модель рамок для мембраны в опыте с фигурами Лиссажу:
+
+[Модель в формате OpenScad](https://github.com/ifizmat/rubber-drum.git) в репозитории на GitHub rubber-drum. 
